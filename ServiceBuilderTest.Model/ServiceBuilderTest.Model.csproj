@@ -64,11 +64,6 @@
     <Compile Include="LinkingTables\UserPrivilege.cs" />
     <Compile Include="LinkingTables\UserOrganization.cs" />
     <Compile Include="Application.cs" />
-    <Compile Include="Migrations\201511112132240_initial.cs" />
-    <Compile Include="Migrations\201511112132240_initial.Designer.cs">
-      <DependentUpon>201511112132240_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Privilege.cs" />
     <Compile Include="Organization.cs" />
     <Compile Include="ServiceBuilderTestContext.cs" />
@@ -80,11 +75,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511112132240_initial.resx">
-      <DependentUpon>201511112132240_initial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
