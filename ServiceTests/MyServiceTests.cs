@@ -14,14 +14,12 @@ namespace ServiceTests
             {
                 OrganizationDTO org = new OrganizationDTO { Name = "MyOrg" };
                 var createdOrg = svc.CreateOrganization(org);
-                var test = "cool";
-                createdOrg.Name = "Bobs";
+                createdOrg.Name = "BobsOrg";
                 var updatedOrg = svc.UpdateOrganization(createdOrg);
-                test = "uhuh";
                 int deleted = svc.DeleteOrganizationById(updatedOrg.Id);
-                test = "yup";
-                var orgs = svc.GetOrganizations();
-                test = "yay!";
+
+                OrganizationDTO newOrg = new OrganizationDTO { Name = "NewOrg" };
+                var createdNewOrg = svc.CreateOrganization(newOrg);
             }
         }
     }
