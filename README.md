@@ -1,13 +1,15 @@
 # ServiceBuilderTest
 A test/example project for the Entity Framework ServiceBuilder tool: https://github.com/JKHeadley/ServiceBuilder
 
+The ServiceBuilderTest model represents an application privileges framework in which users, groups, and organizations can be assigned privileges specific to individual applications. 
+
 # Instructions:
 - Build the 'ServiceBuilderTest.Model' project
 - run `Enable-Migrations` in the Package Manage Console (PMC)
 - run `Add-Migration init` in the PMC
 - run `Update-Database` in the PMC
 - Follow the instructions to install the ServiceBuilder: [https://github.com/JKHeadley/ServiceBuilder]
-- Right click "ServiceBuilderTest.Service" and select "Debug->Start New Instance"
+- Right click the "ServiceBuilderTest.Service" project and select "Debug->Start New Instance"
 - Once the service is running, stop the debugger in VS
 - In the "ServiceTests" project, right click "Service References" and select "Add Service Reference..."
 - Click "Discover", select the service you just started, and click "OK"
